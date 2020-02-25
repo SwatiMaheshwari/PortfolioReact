@@ -9,8 +9,10 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
 <App />
   </BrowserRouter>
   , document.getElementById('root'));
 registerServiceWorker();
+
+ console.log("This is the process.env", process.env.PUBLIC_URL)

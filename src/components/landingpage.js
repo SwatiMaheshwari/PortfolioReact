@@ -4,6 +4,7 @@
 
   class Landing extends Component {
     render() {
+       console.log("This is the process.env", process.env.PUBLIC_URL)
       return(
         <div style={{width: '100%', margin: 'auto'}}>
           <Grid className="landing-grid">
